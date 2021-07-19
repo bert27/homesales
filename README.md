@@ -25,8 +25,15 @@ En construcción.
 Página principal diseñada con los estilos proporcionados a traves de Zeplin.
 
 Requisitos:
-
+<div>
 Recibir json desde un endpoint.
+</div>
+<div>
 Estilos en css
+</div>
+<div>
 Nextjs
+</div>
+<div>
 Uso de bootstrap para el diseño responsive. 
+</div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import HeadC from "../components/Head";
 import { RoomsService } from "../services/Rooms.service";
+import Body from "../components/Body";
 
 export default function Home() {
   useEffect(async () => {
@@ -28,9 +29,37 @@ export default function Home() {
 
       <main className={styles.main}>
         <HeadC />
+        <Body />
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        © 2017 CLICASA. TODOS LOS DERECHOS RESERVADOS Mapa web Contacto Aviso
+        Legal
+        <Image
+          src={"/assets/1489335132-facebook-circle-color.svg"}
+          alt="facebook"
+          width={30}
+          height={30}
+        />
+        <Image
+          src={"/assets/1489335133-twitter-circle-color.svg"}
+          alt="twitter"
+          width={30}
+          height={30}
+        />
+        <Image
+          src={"/assets/1489335130-linkedin-circle-color.svg"}
+          alt="lidkelin"
+          width={30}
+          height={30}
+        />
+        <Image
+          src={"/assets/1489335135-youtube-circle-color.svg"}
+          alt="youtube"
+          width={30}
+          height={30}
+        />
+      </footer>
     </div>
   );
 }

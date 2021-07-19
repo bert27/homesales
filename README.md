@@ -1,5 +1,5 @@
 # Prueba técnica homesales
-Test: home sales portal design 
+Test: Home sales portal design, Next/Node
 
 
 ---
@@ -9,20 +9,31 @@ Test: home sales portal design
 ---
 
 
-## Entorno de desarrollo local
+## Entorno de desarrollo cliente puerto 3000
 
+
+### `cd client`
 ### `npm install`
 Para instalación de dependencias
 
 ### `npm run dev`
 Entorno de desarrollo
 
+## Entorno de desarrollo servidor puerto 4000
+
+
+### `cd server`
+### `npm install`
+Para instalación de dependencias
+
+### `nodemon index.js`
+Entorno de desarrollo
 
 ## Memoria
 ---
 En construcción.
 
-Página principal diseñada con los estilos proporcionados a traves de Zeplin.
+Página principal diseñada con los estilos proporcionados a través de Zeplin.
 
 Requisitos:
 <div>

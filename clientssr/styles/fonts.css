@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "textStyle";
+    src: url("/fonts/Lato-Regular.ttf");
+    font-size: 14px;
+    color: #4a4a4a
+  }
+  @font-face {
+    font-family: "textStyle2";
+    src: url("/fonts/Lato-Light.ttf");
+    font-size: 70px;
+    color: #ffffff 
+  }
+  
+  @font-face {
+    font-family: "textStyle3";
+    src: url("/fonts/Palatino-bold.ttf");
+    font-size: 30px;
+    color: #ffffff;
+  }

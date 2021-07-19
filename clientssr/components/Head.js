@@ -12,10 +12,12 @@ export default function HeadC() {
           height={150}
           className={styles.logo}
         />
-        <div className={styles.VENDER}>VENDER</div>
-        <div className={styles.COMPRAR}>COMPRAR</div>
-        <div className={styles.YOELIJOCLICPISO}>#YOELIJOCLICPISO</div>
-        <div className={styles.COMPRAR}>¿POR QUÉ CLICPISO?</div>
+        <div className={styles.titleMenu}>
+          <div className={styles.VENDER}>VENDER</div>
+          <div className={styles.COMPRAR}>COMPRAR</div>
+          <div className={styles.YOELIJOCLICPISO}>#YOELIJOCLICPISO</div>
+          <div className={styles.COMPRAR}>¿POR QUÉ CLICPISO?</div>
+        </div>
         <Image
           src={"/assets/phone.svg"}
           alt="call"

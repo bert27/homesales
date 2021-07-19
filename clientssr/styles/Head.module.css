@@ -4,6 +4,9 @@
   margin: 0 10px 0 0 !important;
   object-fit: contain;
 }
+.titleMenu{
+  display: flex;
+}
 
 .containerTitle {
   display: flex;

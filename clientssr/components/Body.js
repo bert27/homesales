@@ -2,39 +2,66 @@ import Image from "next/image";
 import styles from "../styles/Body.module.css";
 export default function Body() {
   return (
-    <div>
-      <div className={styles.windowPicture}>
-        <Image
-          src={"/background1.png"}
-          alt="img/ferran-fusalba-99194@2x.jpg 2x,
-        img/ferran-fusalba-99194@3x.jpg 3x"
-          width={1600}
-          height={640}
-          className={styles.ferran_fusalba_99194}
-        />
-      </div>
-      <div className={styles.contentPicture}>
-        <div className={styles.Vendetucasa}>Vende tu casa en un clic</div>
-        <div>
-          <div className={styles.Rectangle2}>
-            <Image
-              src={"/assets/homeico.svg"}
-              alt="home_ico"
-              width={26}
-              height={26}
-              className={styles.homeico}
-            />
-            <span className={styles.Introduce_la_direcci}>
-              Introduce la dirección de tu casa o piso
-            </span>
-            <span className={styles.Button}>VENDER MI INMUEBLE</span>
-          </div>
+    <>
+      <div className={styles.windowPicturef}>
+        <imgbanner className={styles.windowPicture}>
+          <Image
+            src={"/background1.png"}
+            alt="img/ferran-fusalba-99194@2x.jpg 2x,
+           img/ferran-fusalba-99194@3x.jpg 3x"
+            width={1600}
+            height={640}
+            object-fit={"contain"}
+            layout="responsive"
+            className={styles.ferran_fusalba_99194}
+          />
+        </imgbanner>
 
-          <div className={styles.compramos_tucasa}>
-            <div>Compramos tu casa directamente</div>
-            <div>sin complicaciones ni preocupaciones.</div>
+        <imgbanner className={styles.windowPictureMobile}>
+          <Image
+            src={"/assets/mobile1.jpg"}
+            alt={"pictureMobile"}
+            width={375}
+            height={340}
+            className={styles.pictureMobile}
+          />
+        </imgbanner>
+        <div className={styles.contentPicture}>
+          <titlebanner className={styles.Vendetucasa}>
+            <div> Vende tu casa</div>
+            <div>
+              en un <span className={styles.bold}>clic</span>
+            </div>
+          </titlebanner>
+          <div>
+            <searchbar className={styles.Rectangle2}>
+              <Image
+                src={"/assets/homeico.svg"}
+                alt="home_ico"
+                width={26}
+                height={26}
+              />
+              <hola className={styles.Introduce_la_direcci}>
+                Introduce la dirección de tu casa o piso
+              </hola>
+              <span className={styles.Button}>VENDER MI INMUEBLE</span>
+            </searchbar>
 
-            <div className={styles.Rectangle3}>VER VíDEO</div>
+            <div className={styles.compramos_tucasa}>
+              <div>Compramos tu casa directamente</div>
+              <div>sin complicaciones ni preocupaciones.</div>
+
+              <buttonvideo className={styles.Rectangle3}>
+                <span className={styles.verVideo}>VER VíDEO</span>
+                <Image
+                  src={"/assets/play.svg"}
+                  alt="home_ico"
+                  width={30}
+                  height={30}
+                  className={styles.icoVideo}
+                />
+              </buttonvideo>
+            </div>
           </div>
         </div>
       </div>
@@ -47,6 +74,6 @@ export default function Body() {
       </div>
 
       <div>Trabajamos con las mejores empresas</div>
-    </div>
+    </>
   );
 }

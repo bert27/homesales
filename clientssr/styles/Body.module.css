@@ -12,17 +12,17 @@
   letter-spacing: normal;
   text-align: center;
   font-family: textStyle2;
-  color: #ffffff
+  color: #ffffff;
+
 }
 .Vendetucasa .text-style-1 {
   font-weight: bold;
 }
 
-
 .Rectangle2 {
   width: 630px;
   height: 80px;
-  margin: 57px 0 27px;
+  margin: 0 0 27px;
   padding: 16px 15px 14px 20px;
   border-radius: 3px;
   box-shadow: 4px 4px 8px 0 rgba(23, 53, 111, 0.2);
@@ -38,6 +38,9 @@
   padding: 10px 11px 10px 23px;
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Button {
@@ -51,13 +54,18 @@
   color: white;
   text-align: center;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.icoVideo {
+  margin: 0 0 0 32px;
+  fill: #008bcf;
 }
 
 .Introduce_la_direcci {
   width: 294px;
   height: 22px;
 
-  font-family: Lato;
   font-size: 18px;
   font-weight: 300;
   font-stretch: normal;
@@ -67,7 +75,9 @@
   text-align: center;
   color: #4a4a4a;
 }
-
+.bold{
+  font-weight: 900;
+}
 .ferran_fusalba_99194{
 
   margin: 120px 0 375px;
@@ -76,20 +86,28 @@
 }
 .windowPicture{
   position: absolute;
+  width: 100%;
+  height: auto;
+  
+}
+
+.windowPicturef{
+  position: relative;
+  width: 100%;
+  height: 41vw;
 }
 .contentPicture{
   position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .compramos_tucasa {
   width: 430px;
   height: 52px;
   margin: 27px 100px 24px;
-  font-family: Lato;
+  font-family: textStyle2;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -99,3 +117,66 @@
   text-align: center;
   color: #ffffff;
 }
+
+.verVideo {
+  width: 99px;
+  height: 17px;
+  font-family: te;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #008bcf;
+}
+
+.imagecontainer {
+
+  width: 100%;
+
+
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+
+
+.pictureMobile{
+  display: none;
+}
+.windowPictureMobile{
+  display: none;
+}
+
+    @media only screen and (max-width: 480px) {
+      .Vendetucasa {
+        font-size: 40px;
+        margin: 0;
+      }
+   
+    .windowPicture{
+      display: none;
+    }
+  
+    .pictureMobile{
+      margin: 120px 0 375px;
+      padding: 70px 485px 112px;
+      object-fit: contain;
+  
+    }
+
+    .windowPictureMobile{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: auto;
+    }
+
+    }

@@ -1,26 +1,34 @@
-
-
-.logo {
-  margin: 0 10px 0 0 !important;
-  object-fit: contain;
-}
-.titleMenu{
-  display: flex;
-}
-
+@import url(./fonts.css);
 .containerTitle {
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+.contentLogo{
+  margin-left: 42px;
+
+}
+
+.logo {
+  margin: 0 10px 0 0 !important;
+  object-fit: contain;
+
+}
+
+
+.titleMenu{
+  display: flex;
+}
+
+
 
 .VENDER {
   width: 56px;
   height: 17px;
-  margin: 23px 41px 8px 356px;
-  font-family: Lato;
+  margin: 23px 41px 8px 150px;
+  font-family: textStyle;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -29,13 +37,47 @@
   letter-spacing: normal;
   text-align: center;
   color: #4a4a4a;
+  cursor: pointer;
+  border-bottom: 2px solid #008bcf;
 }
 
 .COMPRAR {
   width: 70px;
   height: 17px;
   margin: 23px 36px 8px 29px;
-  font-family: Lato;
+  font-family: textStyle;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.YOELIJOCLICPISO {
+  width: 127px;
+  height: 17px;
+  margin: 23px 26px 8px 36px;
+  font-family: textStyle;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.PORQUCLICPISO {
+  width: 137px;
+  height: 17px;
+  margin: 23px 4px 8px 26px;
+  font-family: textStyle;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -46,17 +88,31 @@
   color: #4a4a4a;
 }
 
-.YOELIJOCLICPISO {
-  width: 127px;
-  height: 17px;
-  margin: 23px 26px 8px 36px;
-  font-family: Lato;
-  font-size: 14px;
+.number {
+  width: 113px;
+  height: 24px;
+  margin: 17px 14px 7px 209px;
+  font-family: textStyle;
+  font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #4a4a4a;
+  color: #545454;
+}
+.buttonBurger{
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .titleMenu {
+   display: none;
+  }
+  .number {
+    display: none;
+   }
+   .buttonBurger{
+    display: flex;
+  }
 }

@@ -48,3 +48,21 @@ Nextjs
 <div>
 Uso de bootstrap para el diseño responsive. 
 </div>
+
+## Anotaciones de trabajo:
+
+Se ha fijado las columnas con grid de bootrap.
+
+Definiendo las anchuras por medio de números del 1 al 12.
+Diferenciando entre modo mvl y pc y escondiendo los componentes en cada uno.
+
+Para la alineación vertical, asi como los margenes o paddings se ha usado selectores de css personalizados agregados como clase secundaria. 
+
+Las imagenes tiene un padre con posición relativa y se controla sus dimensiones en las clases.
+
+Las alineaciones usan flexbox. 
+
+Cada archivo .css es a nivel de componente y pueden repetirse en diferentes archivos las mismas clases sin problemas. 
+De todas formas mejor evitarlo. 
+
+El servidor incluye configuración de cors para evitar problemas en la obtención de datos. 

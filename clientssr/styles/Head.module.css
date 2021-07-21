@@ -10,10 +10,22 @@
   margin-left: 42px;
 
 }
+.itemscenter{
+align-items: center;
+justify-content: space-between;
+}
 
-.logo {
-  margin: 0 10px 0 0 !important;
-  object-fit: contain;
+
+.logo{
+  width: 209px;
+  height: 54px;
+  position: relative;
+  margin-left: 42px;
+}
+.imaged{
+  width: 60px;
+  height: 60px;
+  position: relative;
 
 }
 
@@ -27,7 +39,7 @@
 .VENDER {
   width: 56px;
   height: 17px;
-  margin: 23px 41px 8px 150px;
+ 
   font-family: textStyle;
   font-size: 14px;
   font-weight: normal;
@@ -44,7 +56,7 @@
 .COMPRAR {
   width: 70px;
   height: 17px;
-  margin: 23px 36px 8px 29px;
+ 
   font-family: textStyle;
   font-size: 14px;
   font-weight: normal;
@@ -60,7 +72,7 @@
 .YOELIJOCLICPISO {
   width: 127px;
   height: 17px;
-  margin: 23px 26px 8px 36px;
+
   font-family: textStyle;
   font-size: 14px;
   font-weight: normal;
@@ -76,7 +88,7 @@
 .PORQUCLICPISO {
   width: 137px;
   height: 17px;
-  margin: 23px 4px 8px 26px;
+ 
   font-family: textStyle;
   font-size: 14px;
   font-weight: normal;
@@ -86,12 +98,12 @@
   letter-spacing: normal;
   text-align: center;
   color: #4a4a4a;
+  cursor: pointer;
 }
 
 .number {
   width: 113px;
   height: 24px;
-  margin: 17px 14px 7px 209px;
   font-family: textStyle;
   font-size: 20px;
   font-weight: normal;
@@ -101,10 +113,20 @@
   letter-spacing: normal;
   text-align: center;
   color: #545454;
+  margin-top: 5%;
 }
 .buttonBurger{
   display: none;
 }
+
+.marginTitle{
+ margin-top: 56px;
+}
+.numberf{
+  display: -webkit-inline-box;
+
+}
+
 @media only screen and (max-width: 480px) {
   .titleMenu {
    display: none;
@@ -115,4 +137,43 @@
    .buttonBurger{
     display: flex;
   }
+
+  .logo{
+    width: 126px;
+    height: 34px;
+    margin-left: 9px;
+  }
+  .logoBurger{
+
+    width: 22px;
+    height: 16px;
+    position: relative;
+    margin-left: 15px;
+ 
+  }
+  
+  .numberf{
+    margin-left: 33px;
+
+  }
+
+  .imaged{
+   
+    width: 50px;
+    height: 50px;
+  }
+
+  @media only screen and (max-width: 370px) {
+    
+    .numberf{
+      margin-left: 12px;
+    }
+    .imaged{
+   
+      width: 40px;
+      height: 40px;
+    }
+   
+  }
+
 }

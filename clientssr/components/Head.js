@@ -4,54 +4,62 @@ export default function HeadC() {
   const sizesLogos = 60;
   return (
     <>
-      <div>
-        <div className={styles.containerTitle}>
-          <buttonburger className={styles.buttonBurger}>
+      <div className={"container-fluid mt-4 mb-4 "}>
+        <div className={"row " + styles.itemscenter}>
+          <logo_bmobile className={"d-md-none " + styles.logoBurger}>
             <Image
               src={"/assets/burger.svg"}
               alt="burgerMenu"
-              width={sizesLogos}
-              height={sizesLogos}
+              //width={sizesLogos}
+              //height={sizesLogos}
+              layout="fill"
+              objectFit="contain"
             />
-          </buttonburger>
-          <div className={styles.contentLogo}>
+          </logo_bmobile>
+          <div className={"mt-0 " + styles.logo}>
             <Image
               src={"/logo-principal.svg"}
               alt="logoweb"
-              width={200}
-              height={150}
-              object-fit={"contain"}
-              // layout={"fill"}
-              //layout={"responsive"}
-              className={styles.logo}
+              layout="fill"
+              objectFit="contain"
             />
           </div>
-          <div className={styles.titleMenu}>
-            <div className={styles.VENDER}>VENDER</div>
-            <div className={styles.COMPRAR}>COMPRAR</div>
-            <div className={styles.YOELIJOCLICPISO}>#YOELIJOCLICPISO</div>
-            <div className={styles.PORQUCLICPISO}>¿POR QUÉ CLICPISO?</div>
-          </div>
-          <Image
-            src={"/assets/phone.svg"}
-            alt="call"
-            width={sizesLogos}
-            height={sizesLogos}
-          />
-          <div className={styles.number}>910 123 456</div>
 
-          <Image
-            src={"/assets/whatsapp.svg"}
-            alt="callwhatsap"
-            width={sizesLogos}
-            height={sizesLogos}
-          />
-          <Image
-            src={"/assets/mail.svg"}
-            alt="messages"
-            width={sizesLogos}
-            height={sizesLogos}
-          />
+          <div className={"col-5  mt-4 d-none d-lg-block"}>
+            <span className={styles.VENDER}>VENDER</span>
+            <span className={styles.COMPRAR}>COMPRAR</span>
+            <span className={styles.YOELIJOCLICPISO}>#YOELIJOCLICPISO</span>
+            <span className={styles.PORQUCLICPISO}>¿POR QUÉ CLICPISO?</span>
+          </div>
+          <div className={"col-5 col-xs-3 mt-1 " + styles.numberf}>
+            <div className={styles.imaged}>
+              <Image
+                src={"/assets/phone.svg"}
+                alt="calls"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+            <div className={styles.number}>910 123 456</div>
+
+            <div className={styles.imaged}>
+              <Image
+                src={"/assets/whatsapp.svg"}
+                alt="whatsapp"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+
+            <div className={styles.imaged}>
+              <Image
+                src={"/assets/mail.svg"}
+                alt="messages"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
